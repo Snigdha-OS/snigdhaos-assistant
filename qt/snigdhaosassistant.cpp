@@ -333,7 +333,7 @@ void SnigdhaOSAssistant::updateState(QString state){
 }
 
 
-void SnigdhaOSAssistant::relaunchSelf(){
+void SnigdhaOSAssistant::relaunchSelf(QString param){
     auto binary = QFileInfo(QCoreApplication::applicationFilePath());
     if (executable_modify_date != binary.lastModified()) {
         execlp(binary.absoluteFilePath().toUtf8().constData(), binary.fileName().toUtf8().constData(), param.toUtf8().constData(), NULL);
