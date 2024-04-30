@@ -35,7 +35,7 @@
         <item row="2" column="0">
          <widget class="QStackedWidget" name="textStackedWidget">
           <property name="currentIndex">
-           <number>5</number>
+           <number>4</number>
           </property>
           <widget class="QWidget" name="textWidget_welcome">
            <layout class="QGridLayout" name="gridLayout_3">
@@ -173,7 +173,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Success!&lt;/span&gt;&lt;br/&gt;Your system is set up and ready to go!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.garudalinux.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Garuda Linux Forum&lt;/span&gt;&lt;/a&gt; if issues occour.&lt;br/&gt;&lt;a href=&quot;https://wiki.garudalinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Garuda Linux Wiki&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wiki.archlinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Arch Linux Wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Success!&lt;/span&gt;&lt;br/&gt;Your system is set up and ready to go!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhais.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if issues occour.&lt;br/&gt;&lt;a href=&quot;https://snigdhaos.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Snigdha OS Documentation&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wiki.archlinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Arch Linux Wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
                <enum>Qt::TextFormat::RichText</enum>
