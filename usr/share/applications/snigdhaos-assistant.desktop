@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Snigdha OS Assistant
+Comment=Tool for setting up Snigdha OS
+Encoding=UTF-8
+Exec=snigdhaos-assistant
+Terminal=false
+Type=Application
+Icon=snigdhaos-assistant
+Categories=System;SnigdhaOS-Setup;
+NoDisplay=false     
