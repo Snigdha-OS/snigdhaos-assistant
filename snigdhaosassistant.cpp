@@ -323,3 +323,65 @@ void SnigdhaOSAssistant::updateState(State state){
     }
 }
 
+void SnigdhaOSAssistant::updateState(){
+    if (state == "POST_UPDATE")
+        updateState(State::NVIDIA_CHECK);
+    else if (state == "UPDATE_RETRY")
+        updateState(State::UPDATE_RETRY);
+    else
+        updateState(State::WELCOME);
+}
+
+
+void SnigdhaOSAssistant::relaunchSelf(){
+    auto binary = QFileInfo(QCoreApplication::applicationFilePath());
+    if (executable_modify_date != binary.lastModified()) {
+        execlp(binary.absoluteFilePath().toUtf8().constData(), binary.fileName().toUtf8().constData(), param.toUtf8().constData(), NULL);
+        exit(0);
+    } else
+        updateState(param);
+}
+
+void SnigdhaOSAssistant::on_selectWidget_buttonBox_clicked(){
+    switch (currentState) {
+    case State::WELCOME:
+        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
+            updateState(State::INTERNET);
+        }
+        break;
+    case State::UPDATE_RETRY:
+        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Yes) {
+            updateState(State::INTERNET);
+        }
+        break;
+    case State::NVIDIA:
+        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Yes)
+            updateState(State::NVIDIA_APPLY);
+        else
+            updateState(State::SELECT);
+        return;
+    case State::APPLY_RETRY:
+        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Yes) {
+            updateState(State::APPLY);
+        } else if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Reset) {
+            updateState(State::SELECT);
+        }
+        break;
+    case State::SUCCESS:
+        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
+            QApplication::quit();
+        }
+        break;
+    case State::QUIT:
+        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::No || ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
+            QApplication::quit();
+        } else
+            updateState(State::WELCOME);
+        break;
+    default:;
+    }
+    if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::No || ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Cancel) {
+        updateState(State::QUIT);
+    }
+}
+
