@@ -1,0 +1,42 @@
+false
+firedragon
+Firedragon ((Default!) Floorp fork with custom settings and branding)
+false
+librewolf
+Librewolf (Firefox with enhanced privacy)
+false
+firefox
+Firefox (The original)
+false
+firefox-esr
+Firefox ESR (Extended support release)
+false
+chromium
+Chromium
+false
+ungoogled-chromium
+Ungoogled Chromium (Strips proprietary bits)
+false
+vivaldi vivaldi-ffmpeg-codecs
+Vivaldi
+false
+opera opera-ffmpeg-codecs
+Opera
+false
+torbrowser-launcher
+Tor Browser (The Onion Router)
+false
+otter-browser
+Otter Browser
+false
+brave-bin
+Brave (Based on Chromium + privacy stuff)
+false
+falkon
+Falkon (KDE browser)
+false
+seamonkey
+Seamonkey (Continuation of the Mozilla Internet Suite)
+false
+qutebrowser python-adblock
+Qutebrowser (Keyboard driven, Vim-like browser)
