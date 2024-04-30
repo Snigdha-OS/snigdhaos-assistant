@@ -78,7 +78,7 @@ void SnigdhaOSAssistant::doUpdate(){
     QTemporaryFile* file = new QTemporaryFile(this);
     file->open();
     file->setAutoRemove(true);
-    process->start("/usr/bin/exec-terminal", QStringList() << QString("sudo pacman -Syyu 2>&1 && rm \"" + file->fileName() + "\"; read -p 'Press enter to exit'"));
+    process->start("/usr/bin/gnome-terminal", QStringList() << QString("sudo pacman -Syyu" + file->fileName() + "\"; read -p 'Press enter to exit'"));
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process, file](int exitcode, QProcess::ExitStatus status) {
         process->deleteLater();
         file->deleteLater();
@@ -140,7 +140,7 @@ void SnigdhaOSAssistant::doApply(){
     setupFile->close();
 
     auto process = new QProcess(this);
-    process->start("/usr/bin/exec-terminal", QStringList() << QString("/usr/lib/snigdhaos-assistant/apply.sh \"") + prepareFile->fileName() + "\" \"" + packagesFile->fileName() + "\" \"" + setupFile->fileName() + "\"");
+    process->start("/usr/bin/gnome-terminal", QStringList() << QString("/usr/lib/snigdhaos-assistant/apply.sh \"") + prepareFile->fileName() + "\" \"" + packagesFile->fileName() + "\" \"" + setupFile->fileName() + "\"");
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process, prepareFile, packagesFile, setupFile](int exitcode, QProcess::ExitStatus status) {
         process->deleteLater();
         prepareFile->deleteLater();
@@ -180,7 +180,7 @@ void SnigdhaOSAssistant::doNvidiaCheck(){
 
 void SnigdhaOSAssistant::doNvidiaApply(){
     auto process = new QProcess(this);
-    process->start("/usr/bin/exec-terminal", QStringList() << "sudo mhwd -a pci nonfree 0300; echo; read -p 'Press enter to exit'");
+    process->start("/usr/bin/gnome-terminal", QStringList() << "sudo mhwd -a pci nonfree 0300; echo; read -p 'Press enter to exit'");
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process](int exitcode, QProcess::ExitStatus status) {
         process->deleteLater();
         updateState(State::SELECT);
