@@ -323,7 +323,7 @@ void SnigdhaOSAssistant::updateState(State state){
     }
 }
 
-void SnigdhaOSAssistant::updateState(){
+void SnigdhaOSAssistant::updateState(QString state){
     if (state == "POST_UPDATE")
         updateState(State::NVIDIA_CHECK);
     else if (state == "UPDATE_RETRY")
