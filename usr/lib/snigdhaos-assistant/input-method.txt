@@ -1,0 +1,27 @@
+false
+asian-fonts
+Asian Fonts Support
+false
+fcitx5-input-support fcitx5-configtool fcitx5-m17n
+Devanagari,Kannada,Telgu,Tamil,Malyalam,Bangala etc and many others (fcitx5-m17n)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-chinese-addons
+Simplified Chinese (fcitx5-chinese-addons)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-rime
+Traditional Chinese (fcitx5-rime)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-mozc
+Japanese (fcitx5-mozc)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-hangul
+Korean (fcitx5-hangul)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-unikey
+Vietnamese (fcitx5-unikey)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-sayura
+Sinhalese (fcitx5-sayura)
+false
+fcitx5-input-support fcitx5-configtool fcitx5-libthai
+Thai (fcitx5-libthai)

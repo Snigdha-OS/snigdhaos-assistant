@@ -1,0 +1,27 @@
+false
+thunderbird
+Thunderbird
+false
+kmail
+Kmail (KDE mail client)
+false
+evolution
+evolution (Mature and feature-rich e-mail client that is part of the GNOME project)
+false
+geary
+Geary (GNOME mail client)
+false
+trojita
+Trojita (Qt mail client)
+false
+mailspring
+Mailspring
+false
+claws-mail
+Claws-mail (Lightweight GTK based mail client)
+false
+sylpheed
+Slypheed (Lightweight and user-friendly GTK email client)
+false
+seamonkey
+Seamonkey (Email client included in the SeaMonkey suite)

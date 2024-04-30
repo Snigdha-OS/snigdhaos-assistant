@@ -1,0 +1,57 @@
+false
+krita krita-plugin-gmic opencolorio
+Krita (Paint application by KDE)
+false
+gimp
+GIMP (Advanced image manipulation program)
+false
+inkscape
+Inkscape (Vector graphics)
+false
+blender
+Blender (Full featured 3D creation suite)
+false
+digikam
+Digikam (Photo management app)
+false
+darktable
+DarkTable (Organize and develop raw images)
+false
+luminancehdr
+Luminancehdr (Open source graphical user interface application for HDR imaging)
+false
+kolourpaint
+Kolourpaint (Paint application)
+false
+mypaint
+MyPaint (Digital painting)
+false
+wings3d
+wings3d (Advanced subdivision modeler that is both powerful and easy to use)
+false
+sweethome3d
+sweethome3d (Interior design software application for the development of floor plans)
+false
+freecad
+freecad (Parametric 3D CAD modeler based on OpenCascade)
+false
+librecad
+librecad (A 2D CAD application based on Qt5. Forked from QCAD Community Edition)
+false
+kicad
+kicad (Software suite for electronic design automation (EDA))
+false
+pencil2d
+Pencil 2D (2D handdrawn animations)
+false
+synfigstudio
+Synfig Studio (2D vector animation)
+false
+opentoonz
+opentoonz (2D animation creation software)
+false
+fontforge
+FontForge (Outline and font editor)
+false
+birdfont
+Birdfont (Font editor for creating TTF, EOT and SVG fonts)

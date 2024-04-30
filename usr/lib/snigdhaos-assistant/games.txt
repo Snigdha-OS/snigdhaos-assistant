@@ -1,0 +1,39 @@
+false
+aisleriot
+Aisleriot (Collection of card games)
+false
+mari0
+Mari0 (Mario game clone)
+false
+kapman
+Kapman (Pacman game clone)
+false
+knights
+Knights (Chess game)
+false
+kmahjongg
+Kmahjongg (Mahjongg game)
+false
+supertuxkart
+Super Tux Kart (Kart racing game)
+false
+supertux
+Super Tux (A classic 2D jump'n'run sidescroller game)
+false
+extremetuxracer
+Extreme Tux Racer (Downhill racing game starring Tux)
+false
+minetest minetest-server
+Minetest (Opensource bloack building game)
+false
+0ad
+0ad (Realtime strategy game)
+false
+teeworlds
+Teeworlds (Multiplayer 2D shooter game)
+false
+xonotic
+Xonotic (First person shooter game)
+false
+hedgewars
+Hedgewars (Turn based artillery game)

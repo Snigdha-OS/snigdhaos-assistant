@@ -1,0 +1,48 @@
+false
+hypnotix
+Hypnotix (IPTV app for watching live TV)
+false
+shortwave
+Shortwave (Listening to live radio)
+false
+converseen
+Converseen (Image converter)
+false
+handbrake
+Handbrake (Video format transcoder)
+false
+mystiq
+Mystiq (QT Video converter)
+false
+transmageddon
+Transmageddon (GTK Video converter)
+false
+soundconverter
+Soundconvertor (Audio converter)
+false
+stremio
+Stremio (One-stop hub for video content aggregation)
+false
+kodi kodi-platform kodi-eventclients
+Kodi (Entertainment hub)
+false
+mediaelch
+Mediaelch (Media manager for Kodi)
+false
+subtitlecomposer
+Subtitlecomposer (A KDE subtitle editor)
+false
+kid3
+Kid3 (KDE Tag editor)
+false
+easytag
+Easytag (Audio tag editor)
+false
+k3b cdparanoia cdrdao dvd+rw-tools emovix transcode vcdimager cdrtools
+K3B (CD burning application for KDE)
+false
+brasero
+BRASERO (CD burning application for GTK)
+false
+xfburn
+XFBURN (CD burning application for XFCE)

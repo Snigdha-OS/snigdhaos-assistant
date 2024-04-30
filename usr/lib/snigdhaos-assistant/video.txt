@@ -1,0 +1,24 @@
+false
+kdenlive movit sox opus-tools frei0r-plugins opentimelineio dvgrab opencv
+Kdenlive (Video editor by KDE)
+false
+dragon
+Dragon (Video player by KDE)
+false
+shotcut
+Shotcut (Qt-based video editor)
+false
+openshot
+Openshot (Video editor)
+false
+obs-studio
+OBS Studio (Video recording/streaming)
+false
+vlc
+VLC (Media player)
+false
+smplayer smplayer-skins smplayer-themes
+SMPlayer (Build-in codecs, high compatability video player)
+false
+baka-mplayer
+Baka-Mplayer (Libmpv and Qt based video player)

@@ -1,0 +1,18 @@
+false
+guiscrcpy
+Guiscrcpy (Open source GUI based Android screen mirroring system)
+false
+droidcam
+Droidcam (A tool for using your android device as a wireless/usb webcam)
+false
+soundwire
+Soundwire (Wirelessly transmit audio from PCs to Android phones or other PCs)
+false
+variety
+Variety (Wallpaper changer)
+false
+conky conky-manager
+Conky (System monitor)
+false
+keepassxc
+KeePassXC (Cross-platform Password Manager)

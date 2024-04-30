@@ -1,0 +1,33 @@
+false
+xdman
+Xtreme Download Manager
+false
+freedownloadmanager
+FDM (Free download manager)
+false
+deluge-gtk
+Deluge (GTK torrent client)
+false
+qbittorrent
+Qbittorrent (QT torrent client)
+false
+nextcloud-client
+Nextcloud client (Use our Garuda Cloud to sync dotfiles)
+false
+remmina
+Remmina (Remote access client)
+false
+filezilla
+Filezilla (FTP client)
+false
+putty
+Putty (SSH/Telnet client)
+false
+warpinator
+Warpinator (Network file sharing via LAN)
+false
+nitroshare
+Nitroshare (Network file sharing via LAN)
+false
+jdownloader2
+Jdownloader2 (Advanced download manager)

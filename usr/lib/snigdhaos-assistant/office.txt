@@ -1,0 +1,45 @@
+false
+libreoffice-fresh libmythes
+LibreOffice Fresh (Recommended, full featured office suite)
+false
+libreoffice-still libmythes
+LibreOffice Still (The same than above, more stable version)
+false
+joplin-beta-appimage
+Joplin (Is able to sync notes to Garuda cloud)
+false
+onlyoffice-bin
+OnlyOffice (Aims to be compatible with Microsoft Office)
+false
+wps-office wps-office-mime ttf-wps-fonts
+WPS Office (One of the best compatibilities with Microsoft office)
+false
+freeoffice
+Free Office
+false
+yozo-office yozo-office-fonts
+Yozo Office
+false
+calligra
+Calligra Suite by KDE
+false
+obsidian
+Obsidian 
+flase
+skrooge
+Skrooge (A personal finances manager for KDE)
+false
+kmymoney
+Kmymoney (Personal finance manager for KDE)
+false
+abiword
+Abiword (Simple wordprocessor, recommended for simple writing)
+false
+gnumeric
+Gnumeric (A GNOME Spreadsheet Program)
+false
+gnucash
+GNUCash (Personal and small-business financial-accounting application)
+false
+homebank
+Homebank (Easy to use finance manager)

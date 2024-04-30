@@ -1,0 +1,75 @@
+false
+vim
+VIM (terminal text editor)
+false
+visual-studio-code-bin
+Visual Studio Code (proprietary)
+false
+code
+Visual Studio Code (oss)
+false
+vscodium
+VSCodium (Free/Libre Open Source Software Binaries of VS Code)
+false
+emacs
+GNU Emacs
+false
+qtcreator
+QtCreator
+false
+gnome-builder
+Gnome-builder (An IDE for writing GNOME-based software)
+false
+kdevelop
+Kdevelop (C++ IDE using KDE technologies)
+false
+netbeans
+Netbeans (IDE for Java, HTML5, PHP, Groovy, C and C++)
+false
+postman-bin
+Postman {API platform for building and using APIs}
+false
+intellij-idea-community-edition
+IntelliJ-IDEA (Community Edition)
+false
+pycharm-community-edition
+PyCharm (Community Edition)
+false
+rider
+IntelliJ-Rider
+false
+gitkraken
+Gitkraken
+false
+github-desktop
+GitHub Desktop
+false
+cockpit cockpit-machines
+Cockpit (Access some system settings at localhost:9090)
+false
+ansible
+Ansible (Simple IT automation engine)
+false
+docker docker-compose
+Docker
+false
+podman-docker podman-compose crun
+Podman (Docker, usable with docker commands)
+false
+salt
+Salt (Central system and configuration manager)
+false
+jenkins
+Jenkins (Extendable continuous integration server)
+false
+puppet
+Puppet (Server automation framework and application)
+false
+prometheus
+Prometheus (systems monitoring and alerting toolkit)
+false
+vagrant
+Vagrant (Build and distribute virtualized development environments)
+false
+terraform
+Terraform (Building and updating infrastructure as code)
