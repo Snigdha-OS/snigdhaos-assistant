@@ -2,10 +2,10 @@
 
 #include <QApplication>
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     QApplication a(argc, argv);
-    SnigdhaOSAssistant w;
+    SetupAssistant w(nullptr, a.arguments().length() > 1 ? a.arguments()[1] : "");
     w.show();
     return a.exec();
 }
