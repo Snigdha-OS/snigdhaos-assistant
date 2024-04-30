@@ -342,7 +342,7 @@ void SnigdhaOSAssistant::relaunchSelf(){
         updateState(param);
 }
 
-void SnigdhaOSAssistant::on_selectWidget_buttonBox_clicked(){
+void SnigdhaOSAssistant::on_textWidget_buttonBox_clicked(){
     switch (currentState) {
     case State::WELCOME:
         if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
@@ -385,3 +385,9 @@ void SnigdhaOSAssistant::on_selectWidget_buttonBox_clicked(){
     }
 }
 
+void SnigdhaOSAssistant::on_selectWidget_buttonBox_clicked(QAbstractButton* button){
+    if (ui->selectWidget_buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
+        updateState(State::APPLY);
+    } else
+        updateState(State::QUIT);
+}
