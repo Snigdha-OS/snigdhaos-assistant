@@ -178,3 +178,148 @@ void SnigdhaOSAssistant::doNvidiaCheck(){
     });
 }
 
+void SnigdhaOSAssistant::doNvidiaApply(){
+    auto process = new QProcess(this);
+    process->start("/usr/bin/exec-terminal", QStringList() << "sudo mhwd -a pci nonfree 0300; echo; read -p 'Press enter to exit'");
+    connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process](int exitcode, QProcess::ExitStatus status) {
+        process->deleteLater();
+        updateState(State::SELECT);
+    });
+}
+
+void SnigdhaOSAssistant::populateSelectWidget(){
+    if (ui->selectWidget_tabs->count() > 1)
+        return;
+
+    auto desktop = qEnvironmentVariable("XDG_SESSION_DESKTOP");
+    ui->checkBox_GNOME->setVisible(desktop == "gnome");
+    ui->checkBox_KDE->setVisible(desktop == "kde");
+    if (desktop == "kde") {
+        ui->checkBox_Samba->setProperty("packages", QStringList { "printer-support", "scanner-support", "samba-support", "kdenetwork-filesharing", "skanpage" "smb4k", "print-manager", "skanlite" });
+    } else if (desktop == "gnome") {
+        ui->checkBox_Samba->setProperty("packages", QStringList { "printer-support", "scanner-support", "samba-support", "gvfs-smb", "simple-scan" });
+    } else {
+        ui->checkBox_Samba->setProperty("packages", QStringList { "printer-support", "scanner-support", "samba-support", "gvfs-smb", "simple-scan", "system-config-printer" });
+    }
+
+    bool isDesktop = false;
+    auto chassis = QFile("/sys/class/dmi/id/chassis_type");
+    if (chassis.open(QFile::ReadOnly)) {
+        QStringList list = { "3", "4", "6", "7", "23", "24" };
+        QTextStream in(&chassis);
+        isDesktop = list.contains(in.readLine());
+    }
+    ui->checkBox_Performance->setVisible(isDesktop);
+
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/input-method.txt", "Input");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/pkgmngrs.txt", "Software centers");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/kernels.txt", "Kernels");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/office.txt", "Office");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/browsers.txt", "Browsers");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/mail.txt", "Email");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/communication.txt", "Communication");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/internet.txt", "Internet");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/audio.txt", "Audio");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/video.txt", "Video");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/graphics.txt", "Graphics");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/multimedia.txt", "Multimedia");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/development.txt", "Development");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/virtualization.txt", "Virtualization");
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/other.txt", "Other");
+}
+
+void SnigdhaOSAssistant::populateSelectWidget(QString filename, QString label){
+    QFile file(filename);
+    if (file.open(QIODevice::ReadOnly)) {
+        QScrollArea* scroll = new QScrollArea(ui->selectWidget_tabs);
+        QWidget* tab = new QWidget(scroll);
+        QVBoxLayout* layout = new QVBoxLayout(tab);
+        QTextStream in(&file);
+        while (!in.atEnd()) {
+            QString def = in.readLine();
+            QString packages = in.readLine();
+            QString display = in.readLine();
+            auto checkbox = new QCheckBox(tab);
+            checkbox->setChecked(def == "true");
+            checkbox->setText(display);
+            checkbox->setProperty("packages", packages.split(" "));
+            layout->addWidget(checkbox);
+        }
+
+        scroll->setWidget(tab);
+        ui->selectWidget_tabs->addTab(scroll, label);
+        file.close();
+    }
+}
+
+void SnigdhaOSAssistant::updateState(State state){
+    if (currentState != state) {
+        currentState = state;
+        this->show();
+        this->activateWindow();
+        this->raise();
+
+        switch (state) {
+        case State::WELCOME:
+            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+            ui->textStackedWidget->setCurrentWidget(ui->textWidget_welcome);
+            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+            break;
+        case State::INTERNET:
+            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+            ui->waitingWidget_text->setText("Waiting for an internet connection...");
+            doInternetUpRequest();
+            break;
+        case State::UPDATE:
+            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+            ui->waitingWidget_text->setText("Waiting for update to finish...");
+            doUpdate();
+            break;
+        case State::UPDATE_RETRY:
+            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+            ui->textStackedWidget->setCurrentWidget(ui->textWidget_updateRetry);
+            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
+            break;
+        case State::NVIDIA_CHECK:
+            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+            ui->waitingWidget_text->setText("Checking for NVIDIA drivers...");
+            doNvidiaCheck();
+            break;
+        case State::NVIDIA:
+            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+            ui->textStackedWidget->setCurrentWidget(ui->textWidget_nvidia);
+            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
+            break;
+        case State::NVIDIA_APPLY:
+            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+            ui->waitingWidget_text->setText("Installing NVIDIA drivers...");
+            doNvidiaApply();
+            break;
+        case State::QUIT:
+            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+            ui->textStackedWidget->setCurrentWidget(ui->textWidget_quit);
+            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Reset);
+            break;
+        case State::SELECT:
+            ui->mainStackedWidget->setCurrentWidget(ui->selectWidget);
+            populateSelectWidget();
+            break;
+        case State::APPLY:
+            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+            ui->waitingWidget_text->setText("Applying...");
+            doApply();
+            break;
+        case State::APPLY_RETRY:
+            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+            ui->textStackedWidget->setCurrentWidget(ui->textWidget_applyRetry);
+            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No | QDialogButtonBox::Reset);
+            break;
+        case State::SUCCESS:
+            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+            ui->textStackedWidget->setCurrentWidget(ui->textWidget_success);
+            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Ok);
+            break;
+        }
+    }
+}
+
