@@ -342,7 +342,7 @@ void SnigdhaOSAssistant::relaunchSelf(QString param){
         updateState(param);
 }
 
-void SnigdhaOSAssistant::on_textWidget_buttonBox_clicked(){
+void SnigdhaOSAssistant::on_textWidget_buttonBox_clicked(QAbstractButton* button){
     switch (currentState) {
     case State::WELCOME:
         if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
