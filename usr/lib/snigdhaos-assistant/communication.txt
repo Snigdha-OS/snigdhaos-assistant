@@ -1,0 +1,42 @@
+false
+telegram-desktop
+Telegram Desktop
+false
+discord
+Discord (Proprietary all-in-one voice and text chat application for gamers)
+false
+neochat
+Neochat (Matrix client for KDE)
+false
+fractal
+Fractal (Matrix client for GNOME)
+false
+element-desktop
+Element (Matrix client based on Electron)
+false
+wire-desktop
+Wire (Modern, private messenger)
+false
+signal-desktop
+Signal (Desktop application for Signal private messenger)
+false
+jitsi-meet
+Jitsi-Meet (Open source webconferencing)
+false
+zoom
+Zoom (Proprietary video conferencing application)
+false
+skypeforlinux-stable-bin
+Skype (Proprietary application for voice and video communication)
+false
+teams
+Microsoft Teams (Proprietary client for Microsoft Teams)
+false
+slack-desktop
+Slack (Proprietary Slack client for desktops)
+false
+mumble
+Mumble (Open source Teamspeak clone)
+false
+streamlink-twitch-gui-bin
+Twitch GUI (GUI for Twitch livestreams)
