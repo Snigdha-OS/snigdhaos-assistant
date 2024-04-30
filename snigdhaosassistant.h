@@ -1,3 +1,9 @@
+/*
+* Original Author : Garuda Linux & Team.
+* Thanks for developing this application.
+* love from Bangladesh
+*/
+
 #ifndef SNIGDHAOSASSISTANT_H
 #define SNIGDHAOSASSISTANT_H
 
