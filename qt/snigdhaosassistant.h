@@ -28,9 +28,9 @@ public:
         INTERNET,
         UPDATE,
         UPDATE_RETRY,
-        NVIDIA_CHECK,
-        NVIDIA,
-        NVIDIA_APPLY,
+        // NVIDIA_CHECK,
+        // NVIDIA,
+        // NVIDIA_APPLY,
         SELECT,
         APPLY,
         APPLY_RETRY,
@@ -52,8 +52,8 @@ private:
     void doInternetUpRequest();
     void doUpdate();
     void doApply();
-    void doNvidiaCheck();
-    void doNvidiaApply();
+    // void doNvidiaCheck();
+    // void doNvidiaApply();
     void populateSelectWidget();
     void populateSelectWidget(QString filename, QString label);
     void updateState(State state);

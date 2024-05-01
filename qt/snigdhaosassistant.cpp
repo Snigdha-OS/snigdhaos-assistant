@@ -70,7 +70,7 @@ void SnigdhaOSAssistant::doInternetUpRequest(){
 
 
 void SnigdhaOSAssistant::doUpdate(){
-    if (qEnvironmentVariableIsSet("SETUP_ASSISTANT_SELFUPDATE")) {
+    if (qEnvironmentVariableIsSet("SNIGDHAOS_ASSISTANT_SELFUPDATE")) {
         updateState(State::SELECT);
         return;
     }
@@ -78,7 +78,7 @@ void SnigdhaOSAssistant::doUpdate(){
     QTemporaryFile* file = new QTemporaryFile(this);
     file->open();
     file->setAutoRemove(true);
-    process->start("/usr/bin/gnome-terminal", QStringList() << QString("sudo pacman -Syyu" + file->fileName() + "\"; read -p 'Press enter to exit'"));
+    process->start("/usr/lib/snigdhaos/launch-terminal", QStringList() << QString("sudo pacman -Syyu 2>&1 && rm \"" + file->fileName() + "\"; read -p 'Press enter to exit'"));
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process, file](int exitcode, QProcess::ExitStatus status) {
         process->deleteLater();
         file->deleteLater();
@@ -140,7 +140,7 @@ void SnigdhaOSAssistant::doApply(){
     setupFile->close();
 
     auto process = new QProcess(this);
-    process->start("/usr/bin/gnome-terminal", QStringList() << QString("/usr/lib/snigdhaos-assistant/apply.sh \"") + prepareFile->fileName() + "\" \"" + packagesFile->fileName() + "\" \"" + setupFile->fileName() + "\"");
+    process->start("/usr/lib/snigdhaos/launch-terminal", QStringList() << QString("/usr/lib/snigdhaos-assistant/apply.sh \"") + prepareFile->fileName() + "\" \"" + packagesFile->fileName() + "\" \"" + setupFile->fileName() + "\"");
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process, prepareFile, packagesFile, setupFile](int exitcode, QProcess::ExitStatus status) {
         process->deleteLater();
         prepareFile->deleteLater();
@@ -148,44 +148,44 @@ void SnigdhaOSAssistant::doApply(){
         setupFile->deleteLater();
 
         if (exitcode == 0 && !packagesFile->exists()) {
-            updateState(State::SUCCESS);
+            updateState(State::SELECT);
         } else {
             updateState(State::APPLY_RETRY);
         }
     });
 }
 
-void SnigdhaOSAssistant::doNvidiaCheck(){
-    auto process = new QProcess(this);
-    process->start("mhwd", QStringList() << "-li"
-                                         << "--pci");
-    connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process](int exitcode, QProcess::ExitStatus status) {
-        process->deleteLater();
-        if (exitcode == 0 && !QString(process->readAllStandardOutput()).contains("nvidia")) {
-            auto process2 = new QProcess(this);
-            process2->start("mhwd", QStringList() << "-l"
-                                                  << "--pci");
-            connect(process2, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process2](int exitcode, QProcess::ExitStatus status) {
-                process2->deleteLater();
-                if (exitcode == 0 && QString(process2->readAllStandardOutput()).contains("nvidia"))
-                    updateState(State::NVIDIA);
-                else
-                    updateState(State::SELECT);
-            });
-        } else {
-            updateState(State::SELECT);
-        }
-    });
-}
+// void SnigdhaOSAssistant::doNvidiaCheck(){
+//     auto process = new QProcess(this);
+//     process->start("mhwd", QStringList() << "-li"
+//                                          << "--pci");
+//     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process](int exitcode, QProcess::ExitStatus status) {
+//         process->deleteLater();
+//         if (exitcode == 0 && !QString(process->readAllStandardOutput()).contains("nvidia")) {
+//             auto process2 = new QProcess(this);
+//             process2->start("mhwd", QStringList() << "-l"
+//                                                   << "--pci");
+//             connect(process2, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process2](int exitcode, QProcess::ExitStatus status) {
+//                 process2->deleteLater();
+//                 if (exitcode == 0 && QString(process2->readAllStandardOutput()).contains("nvidia"))
+//                     updateState(State::NVIDIA);
+//                 else
+//                     updateState(State::SELECT);
+//             });
+//         } else {
+//             updateState(State::SELECT);
+//         }
+//     });
+// }
 
-void SnigdhaOSAssistant::doNvidiaApply(){
-    auto process = new QProcess(this);
-    process->start("/usr/bin/gnome-terminal", QStringList() << "sudo mhwd -a pci nonfree 0300; echo; read -p 'Press enter to exit'");
-    connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process](int exitcode, QProcess::ExitStatus status) {
-        process->deleteLater();
-        updateState(State::SELECT);
-    });
-}
+// void SnigdhaOSAssistant::doNvidiaApply(){
+//     auto process = new QProcess(this);
+//     process->start("/usr/lib/snigdhaos/launch-terminal", QStringList() << "sudo mhwd -a pci nonfree 0300; echo; read -p 'Press enter to exit'");
+//     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, process](int exitcode, QProcess::ExitStatus status) {
+//         process->deleteLater();
+//         updateState(State::SELECT);
+//     });
+// }
 
 void SnigdhaOSAssistant::populateSelectWidget(){
     if (ui->selectWidget_tabs->count() > 1)
@@ -280,21 +280,21 @@ void SnigdhaOSAssistant::updateState(State state){
             ui->textStackedWidget->setCurrentWidget(ui->textWidget_updateRetry);
             ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
             break;
-        case State::NVIDIA_CHECK:
-            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
-            ui->waitingWidget_text->setText("Checking for NVIDIA drivers...");
-            doNvidiaCheck();
-            break;
-        case State::NVIDIA:
-            ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
-            ui->textStackedWidget->setCurrentWidget(ui->textWidget_nvidia);
-            ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
-            break;
-        case State::NVIDIA_APPLY:
-            ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
-            ui->waitingWidget_text->setText("Installing NVIDIA drivers...");
-            doNvidiaApply();
-            break;
+        // case State::NVIDIA_CHECK:
+        //     ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+        //     ui->waitingWidget_text->setText("Checking for NVIDIA drivers...");
+        //     doNvidiaCheck();
+        //     break;
+        // case State::NVIDIA:
+        //     ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
+        //     ui->textStackedWidget->setCurrentWidget(ui->textWidget_nvidia);
+        //     ui->textWidget_buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
+        //     break;
+        // case State::NVIDIA_APPLY:
+        //     ui->mainStackedWidget->setCurrentWidget(ui->waitingWidget);
+        //     ui->waitingWidget_text->setText("Installing NVIDIA drivers...");
+        //     doNvidiaApply();
+        //     break;
         case State::QUIT:
             ui->mainStackedWidget->setCurrentWidget(ui->textWidget);
             ui->textStackedWidget->setCurrentWidget(ui->textWidget_quit);
@@ -325,7 +325,7 @@ void SnigdhaOSAssistant::updateState(State state){
 
 void SnigdhaOSAssistant::updateState(QString state){
     if (state == "POST_UPDATE")
-        updateState(State::NVIDIA_CHECK);
+        updateState(State::SELECT);
     else if (state == "UPDATE_RETRY")
         updateState(State::UPDATE_RETRY);
     else
@@ -354,12 +354,12 @@ void SnigdhaOSAssistant::on_textWidget_buttonBox_clicked(QAbstractButton* button
             updateState(State::INTERNET);
         }
         break;
-    case State::NVIDIA:
-        if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Yes)
-            updateState(State::NVIDIA_APPLY);
-        else
-            updateState(State::SELECT);
-        return;
+    // case State::NVIDIA:
+    //     if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Yes)
+    //         updateState(State::NVIDIA_APPLY);
+    //     else
+    //         updateState(State::SELECT);
+    //     return;
     case State::APPLY_RETRY:
         if (ui->textWidget_buttonBox->standardButton(button) == QDialogButtonBox::Yes) {
             updateState(State::APPLY);

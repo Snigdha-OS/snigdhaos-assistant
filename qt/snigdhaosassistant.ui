@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="mainStackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="textWidget">
        <layout class="QGridLayout" name="gridLayout_2">
@@ -30,12 +30,15 @@
           <property name="standardButtons">
            <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
           </property>
+          <property name="centerButtons">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
         <item row="2" column="0">
          <widget class="QStackedWidget" name="textStackedWidget">
           <property name="currentIndex">
-           <number>4</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="textWidget_welcome">
            <layout class="QGridLayout" name="gridLayout_3">
@@ -48,7 +51,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Welcome to Snigdha OS!&lt;/span&gt;&lt;br/&gt;This interactive assistant will help you set up your system to your wishes.&lt;/p&gt;&lt;p&gt;Before the setup assistant can continue, initial system updates have to be applied and the Snigdha OS Assistant updated.&lt;br/&gt;Make sure you have a working internet connection before you continue.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Welcome to &lt;b&gt;Snigdha OS!&lt;/b&gt;😊&lt;/span&gt;&lt;br/&gt;&lt;b&gt;Snigdha OS Assistant&lt;/b&gt; will help you set up your system to your wishes.&lt;/p&gt;&lt;p&gt;Before the Snigdha OS Assistant can continue, initial system updates have to be applied and the Snigdha OS Assistant is updated.&lt;br/&gt;Make sure you have a working internet connection before you continue.&lt;/p&gt;&lt;/br&gt;This application is inspired from &lt;b&gt;Garuda Linux&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
                <enum>Qt::TextFormat::RichText</enum>
@@ -77,7 +80,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Update failed!&lt;/span&gt;&lt;br/&gt;System update failed. Try again?&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhaos.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if further issues occour.&lt;br/&gt;Finishing this update via the Snigdha OS Assistant is highly recommended in order to apply release-specific fixes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Update failed!😒&lt;/span&gt;&lt;br/&gt;System update failed. Try again?😬&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhaos.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if further issues occour.&lt;br/&gt;Finishing this update via the Snigdha OS Assistant is highly recommended in order to apply release-specific fixes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
                <enum>Qt::TextFormat::RichText</enum>
@@ -173,7 +176,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Success!&lt;/span&gt;&lt;br/&gt;Your system is set up and ready to go!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhais.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if issues occour.&lt;br/&gt;&lt;a href=&quot;https://snigdhaos.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Snigdha OS Documentation&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wiki.archlinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Arch Linux Wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Success!😎&lt;/span&gt;&lt;br/&gt;Your system is set up and ready to go!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhais.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if issues occour.&lt;br/&gt;&lt;a href=&quot;https://snigdhaos.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Snigdha OS Documentation&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wiki.archlinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Arch Linux Wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
                <enum>Qt::TextFormat::RichText</enum>
@@ -205,7 +208,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Before you go&lt;/span&gt;&lt;/p&gt;&lt;p&gt;You can restart the setup assistant at any time.&lt;br/&gt;Finishing the Snigdha OS Assistant is recommended in order to apply release-specific fixes.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhaos.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if issues occour.&lt;br/&gt;&lt;a href=&quot;https://snigdhaos.org/documentation/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Snigdha OS Documentation&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wiki.archlinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Arch Linux Wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Before you go🧸&lt;/span&gt;&lt;/p&gt;&lt;p&gt;You can restart the Snigdha OS Assistant at any time.&lt;br/&gt;Finishing the Snigdha OS Assistant is recommended in order to apply release-specific fixes.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forum.snigdhaos.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Visit the Snigdha OS Forum&lt;/span&gt;&lt;/a&gt; if issues occour.&lt;br/&gt;&lt;a href=&quot;https://snigdhaos.org/documentation/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Snigdha OS Documentation&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wiki.archlinux.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#754ffe;&quot;&gt;Arch Linux Wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
                <enum>Qt::TextFormat::RichText</enum>
@@ -321,7 +324,6 @@
               </property>
               <property name="packages" stdset="0">
                <stringlist notr="true">
-                <string>garuda-blackarch</string>
                 <string>blackarch-keyring</string>
                 <string>blackarch-menus</string>
                 <string>blackarch-mirrorlist</string>
