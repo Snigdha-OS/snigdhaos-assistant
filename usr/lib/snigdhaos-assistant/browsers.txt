@@ -1,7 +1,4 @@
 false
-firedragon
-Firedragon ((Default!) Floorp fork with custom settings and branding)
-false
 librewolf
 Librewolf (Firefox with enhanced privacy)
 false

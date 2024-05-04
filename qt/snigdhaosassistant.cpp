@@ -211,6 +211,7 @@ void SnigdhaOSAssistant::populateSelectWidget(){
     }
     ui->checkBox_Performance->setVisible(isDesktop);
 
+    populateSelectWidget("/usr/lib/snigdhaos-assistant/nvidia.txt", "Nvidia");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/input-method.txt", "Input");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/pkgmngrs.txt", "Software centers");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/kernels.txt", "Kernels");

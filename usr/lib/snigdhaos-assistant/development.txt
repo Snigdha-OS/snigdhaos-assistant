@@ -20,6 +20,9 @@ false
 gnome-builder
 Gnome-builder (An IDE for writing GNOME-based software)
 false
+hugo
+Hugo (A static Website Generator)
+false
 kdevelop
 Kdevelop (C++ IDE using KDE technologies)
 false
@@ -43,6 +46,7 @@ Gitkraken
 false
 github-desktop
 GitHub Desktop
+
 false
 cockpit cockpit-machines
 Cockpit (Access some system settings at localhost:9090)

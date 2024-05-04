@@ -1,0 +1,9 @@
+false
+nvidia-dkms
+Nvidia-DKMS (NVIDIA drivers - module sources)
+false
+nvidia-settings
+Nvidia-Settings (Tool for configuring the NVIDIA graphics driver)
+false
+nvidia-utils
+Nvidia-Utils (NVIDIA drivers utilities)
