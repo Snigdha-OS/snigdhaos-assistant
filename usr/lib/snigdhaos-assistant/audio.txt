@@ -31,3 +31,42 @@ Elisa (Simple music player aiming to provide a nice experience for its users)
 false
 gmusicbrowser
 Gmusicbrowser (Open-source jukebox for large collections of mp3/ogg/flac files, written in perl)
+false
+g4music
+G4Music (Play your music)
+false
+kwave
+KWave (A sound editor for KDE)
+false
+lollypop
+Lollypop (Music player for GNOME)
+false
+lxmusic
+Lxmusic
+false
+lmms
+Lmms (The Linux MultiMedia Studio)
+false
+ncmpcpp
+Ncmpcpp (An almost exact clone of ncmpc with some new features)
+false
+olivia
+Olivia (Elegant Cloud Music Player for Linux Desktop)
+false
+rhythmbox
+Rhythmbox (Music playback and management application)
+false
+sayonara-player
+Sayonara Player (Small, clear and fast audio player for Linux written in C++, supported by the Qt framework. It uses Gstreamer as audio backend)
+false
+shortwave
+Shortwave (Find and listen to internet radio stations)
+false
+soundconverter
+Sound Converter (A simple sound converter application for GNOME)
+false
+spotify
+Spotify (A proprietary music streaming service)
+false
+tauon-music-box
+Tauon Music Box (A modern music player)
