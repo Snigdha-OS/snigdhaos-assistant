@@ -1,0 +1,21 @@
+false
+amberol
+Amberol (Plays music, and nothing else)
+false
+ardour
+Ardour (A multichannel hard disk recorder and digital audio workstation)
+false
+audacious
+Audacious (Lightweight, advanced audio player focused on audio quality)
+false
+audacious-plugins
+Audacious Plugins (Plugins for Audacious)
+false
+audacity
+Audacity (A program that lets you manipulate digital audio waveforms)
+false
+cava
+Cava (Console-based Audio Visualizer for Alsa)
+false
+clementine
+Clementine (A modern music player and library organizer)
