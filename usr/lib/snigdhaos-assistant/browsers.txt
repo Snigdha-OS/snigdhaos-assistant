@@ -1,0 +1,33 @@
+false
+brave-bin
+Brave Browser (Web browser that blocks ads and trackers by default)
+false
+chromium
+Chromium (A web browser built for speed, simplicity, and security)
+false
+falkon
+Falkon (Cross-platform QtWebEngine browser)
+false
+firefox
+FireFox (FireFox Web Browser)
+false
+firefox-esr
+FireFox ESR (FireFox Extended Support Release)
+false
+google-chrome
+Google Chrome (The popular web browser by Google)
+false
+icecat
+Icecat (GNU version of the Firefox ESR browser)
+false
+librewolf
+Librewolf (Community-maintained fork of Firefox, focused on privacy, security and freedom)
+false
+opera
+Opera (A fast and secure web browser)
+false
+qutebrowser
+Qute Browser (A keyboard-driven, vim-like browser based on PyQt)
+false
+vivaldi
+Vivaldi (An advanced browser made with the power user in mind)
