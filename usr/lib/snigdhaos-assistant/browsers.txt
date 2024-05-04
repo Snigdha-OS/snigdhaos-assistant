@@ -1,6 +1,6 @@
 false
-librewolf
-Librewolf (Firefox with enhanced privacy)
+brave-bin
+Brave Browser (Based on Chromium + privacy stuff)
 false
 firefox
 Firefox (The original)
@@ -10,6 +10,9 @@ Firefox ESR (Extended support release)
 false
 chromium
 Chromium
+false
+chromium-widevine
+Chromium Widevine (A browser plugin designed for the viewing of premium video content)
 false
 ungoogled-chromium
 Ungoogled Chromium (Strips proprietary bits)

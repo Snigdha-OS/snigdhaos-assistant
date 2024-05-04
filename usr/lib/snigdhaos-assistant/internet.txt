@@ -31,3 +31,27 @@ Nitroshare (Network file sharing via LAN)
 false
 jdownloader2
 Jdownloader2 (Advanced download manager)
+false
+dropbox
+Dropbox (A free service that lets you bring your photos, docs, and videos anywhere and share them easily)
+false
+insync
+Insync (An unofficial Dropbox, Google Drive, and OneDrive client that runs on Linux, with support for various desktops)
+false
+insync-nautilus
+Insync Nautilus Plugin (Python extension and icons for integrating Insync with Nautilus)
+false
+insync-dolphin
+Insync Dolphin Plugin (This package contains the service menu for integrating Insync with Dolphin)
+false
+insync-thunar
+Insync Thunar Plugin (Thunar integration for insync)
+false
+insync-nemo
+Insync Nemo Plugin (Nemo integration for insync) 
+false
+nextcloud-client
+Next Cloud (Nextloud client for linux)
+false
+megasync-bin
+Mega Sync (Official MEGA desktop application for syncing with MEGA Cloud Drive)

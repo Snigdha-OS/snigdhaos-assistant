@@ -5,6 +5,9 @@ false
 discord
 Discord (Proprietary all-in-one voice and text chat application for gamers)
 false
+discord_arch_electron
+Discord Electron (Proprietary all-in-one voice and text chat application for gamers)
+false
 neochat
 Neochat (Matrix client for KDE)
 false
