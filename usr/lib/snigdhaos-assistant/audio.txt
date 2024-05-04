@@ -19,3 +19,15 @@ Cava (Console-based Audio Visualizer for Alsa)
 false
 clementine
 Clementine (A modern music player and library organizer)
+false
+curseradio
+Curseradio (Command line radio player)
+false
+deadbeef
+Deadbeef (Modular GTK audio player for GNU/Linux)
+false
+elisa
+Elisa (Simple music player aiming to provide a nice experience for its users)
+false
+gmusicbrowser
+Gmusicbrowser (Open-source jukebox for large collections of mp3/ogg/flac files, written in perl)

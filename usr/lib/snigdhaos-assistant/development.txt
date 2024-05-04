@@ -46,7 +46,9 @@ Gitkraken
 false
 github-desktop
 GitHub Desktop
-
+false
+github-desktop-bin
+Github Desktop Bin (GUI for managing Git and GitHub Binary Version)
 false
 cockpit cockpit-machines
 Cockpit (Access some system settings at localhost:9090)
