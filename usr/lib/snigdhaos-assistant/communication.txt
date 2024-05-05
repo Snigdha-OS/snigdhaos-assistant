@@ -1,0 +1,54 @@
+false
+element-desktop
+Element Desktop (All-in-one secure chat app for teams, friends and organisations)
+false
+discord
+Discord (Instant messaging and VoIP social platform)
+false
+discord_arch_electron
+Discord Electron (Popular voice + video app using the system provided electron for increased security and performance)
+false
+google-chat-linux-bin
+Google Chat (Unofficial electron-based desktop client for Google Chat, electron included)
+false
+hexchat
+Hex Chat (A GTK+ based IRC client)
+false
+jitsi-meet-desktop-bin
+Jitsi Meet (Jitsi Meet desktop application powered by Electron)
+false
+mumble
+Mumble (An Open Source, low-latency, high quality voice chat software)
+false
+neochat
+Neo Chat (A client for matrix, the decentralized communication protocol)
+false
+pidgin
+Pidgin
+false
+qtox
+Qtox
+false
+skypeforlinux-bin
+Skype (Skype for Linux)
+false
+signal-desktop
+Signal (Private messaging from your desktop)
+false
+slack-desktop
+Slack (Slack Desktop Beta for Linux)
+false
+teams
+MS Teams (Microsoft Teams for Linux is your chat-centered workspace in Office 365)
+false
+telegram-desktop
+Telegram (Official desktop version of Telegram messaging app)
+false
+whatsapp-nativefier
+WhatsApp (WhatsApp desktop built with nativefier)
+false
+wire-desktop
+Wire Desktop (End-to-end encrypted messenger with file sharing, voice calls and video conferences)
+false
+zoom
+Zoom (Video Conferencing and Web Conferencing Service)
