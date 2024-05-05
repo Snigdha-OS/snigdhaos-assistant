@@ -5,11 +5,11 @@ false
 visual-studio-code-bin
 Visual Studio Code (proprietary)
 false
-code
-Visual Studio Code (oss)
-false
 vscodium
 VSCodium (Free/Libre Open Source Software Binaries of VS Code)
+false
+sublime-text-4
+Sublime Text 4 (Sophisticated text editor for code, html and prose)
 false
 emacs
 GNU Emacs
@@ -79,3 +79,6 @@ Vagrant (Build and distribute virtualized development environments)
 false
 terraform
 Terraform (Building and updating infrastructure as code)
+false
+notepadqq
+Notepadqq (Notepad++-like text editor for Linux)
