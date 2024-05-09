@@ -16,3 +16,9 @@ Conky (System monitor)
 false
 keepassxc
 KeePassXC (Cross-platform Password Manager)
+false
+enpass-bin
+Enpass
+false
+lastpass
+LastPass

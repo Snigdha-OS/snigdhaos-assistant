@@ -10,3 +10,6 @@ Virt-manager (More advanced KVM interface)
 false
 genymotion virtualbox-meta
 Genymotion (Provides a virtual environment for Android using Virtualbox)
+false
+qemu-base
+Qemu
