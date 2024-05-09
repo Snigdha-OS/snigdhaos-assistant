@@ -16,8 +16,16 @@
 #include <QtNetwork/QNetworkReply>
 #include <unistd.h>
 
+/*
+*  a constant variable INTERNET_CHECK_URL which stores the URL to check for internet connectivity.
+*/
 const char* INTERNET_CHECK_URL = "https://snigdhaos.org";
 
+/*
+* constructor for the SnigdhaOSAssistant class. 
+* it sets up the window icon, initializes the user interface, modifies window flags, 
+* retrieves the last modified date of the application executable, and updates the application state.
+*/
 SnigdhaOSAssistant::SnigdhaOSAssistant(QWidget *parent, QString state)
     : QMainWindow(parent)
     , ui(new Ui::SnigdhaOSAssistant)
@@ -29,6 +37,9 @@ SnigdhaOSAssistant::SnigdhaOSAssistant(QWidget *parent, QString state)
     updateState(state);
 }
 
+/*
+*  destructor for the SnigdhaOSAssistant class, responsible for cleaning up the user interface object.
+*/
 SnigdhaOSAssistant::~SnigdhaOSAssistant()
 {
     delete ui;
