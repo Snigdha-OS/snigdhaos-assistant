@@ -4,11 +4,16 @@
 * love from Bangladesh
 */
 
+//preprocessor directives: ensures that the contents of the file are only included once in a translation unit, 
+//preventing multiple inclusions and potential naming conflicts
 #ifndef SNIGDHAOSASSISTANT_H
 #define SNIGDHAOSASSISTANT_H
 
-#include <QMainWindow>
+//class for main application windows
+#include <QMainWindow> 
+//abstract base class for buttons
 #include <QAbstractButton>
+//class for managing network operations
 #include <QtNetwork/QNetworkAccessManager>
 
 QT_BEGIN_NAMESPACE
