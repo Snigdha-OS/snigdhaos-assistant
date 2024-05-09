@@ -214,7 +214,7 @@ void SnigdhaOSAssistant::populateSelectWidget(){
     populateSelectWidget("/usr/lib/snigdhaos-assistant/nvidia.txt", "Nvidia");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/input-method.txt", "Input");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/pkgmngrs.txt", "Software centers");
-    populateSelectWidget("/usr/lib/snigdhaos-assistant/kernels.txt", "Kernels");
+    // populateSelectWidget("/usr/lib/snigdhaos-assistant/kernels.txt", "Kernels");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/office.txt", "Office");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/browsers.txt", "Browsers");
     populateSelectWidget("/usr/lib/snigdhaos-assistant/mail.txt", "Email");
