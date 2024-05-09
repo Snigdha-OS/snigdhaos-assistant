@@ -1,3 +1,6 @@
+//main function of the application, responsible for starting the Qt application and 
+//creating an instance of the SnigdhaOSAssistant class.
+
 #include "snigdhaosassistant.h"
 
 #include <QApplication>
