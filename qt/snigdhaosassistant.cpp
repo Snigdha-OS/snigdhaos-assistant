@@ -19,7 +19,7 @@
 /*
 *  a constant variable INTERNET_CHECK_URL which stores the URL to check for internet connectivity.
 */
-const char* INTERNET_CHECK_URL = "https://snigdhaos.org";
+const char* INTERNET_CHECK_URL = "https://google.com/";
 
 /*
 * constructor for the SnigdhaOSAssistant class. 
