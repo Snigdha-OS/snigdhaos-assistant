@@ -9,7 +9,7 @@ echo ""
 echo "Installing packages ⏳"
 echo ""
 installable_packages=$(comm -12 <(pacman -Slq | sort) <(sed s/\\s/\\n/g - <$2 | sort))
-sudo pacman -S --needed $installable_packages && rm $2 || { read -p "Error! Press enter to return to Snigdha OS Assistant."; exit; }
+sudo pacman -S --needed $installable_packages && rm $2 || { read -p "Error🚫! Press enter to return to Snigdha OS Assistant."; exit; }
 
 if [ -e "$3" ]; then
 	echo ""
@@ -19,4 +19,4 @@ if [ -e "$3" ]; then
 fi
 
 echo ""
-read -p "Press enter to return to Snigdha OS Assistant ⤶"
+read -p "Press enter to return to Snigdha OS Assistant🛑"
