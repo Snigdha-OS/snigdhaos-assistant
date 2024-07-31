@@ -42,6 +42,9 @@ fi
 echo "Commit message:"
 echo "$commit_msg"
 
+# Pull form Github
+git pull
+
 # Stage all changes
 git add .
 
