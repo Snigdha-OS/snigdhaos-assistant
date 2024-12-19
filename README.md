@@ -1,6 +1,6 @@
-# SnigdhaOS Assistant 🚀
+# Snigdha OS Assistant 🚀
 
-SnigdhaOS Assistant is a **Post Package Installer** designed to make setting up your Snigdha OS system a breeze! 🌟 Inspired by the post-installation tools of [Garuda Linux](https://garudalinux.org/), this utility simplifies the process of installing essential software, saving you time and effort. Whether you’re a power user or a newcomer, SnigdhaOS Assistant ensures your system is up and running with just a few clicks. 💻
+Snigdha OS Assistant is a **Post Package Installer** designed to make setting up your Snigdha OS system a breeze! 🌟 Inspired by the post-installation tools of [Garuda Linux](https://garudalinux.org/), this utility simplifies the process of installing essential software, saving you time and effort. Whether you’re a power user or a newcomer, Snigdha OS Assistant ensures your system is up and running with just a few clicks. 💻
 
 ## ✨ Features
 
@@ -11,7 +11,7 @@ SnigdhaOS Assistant is a **Post Package Installer** designed to make setting up 
 
 ## 📦 Installation
 
-Follow these steps to install SnigdhaOS Assistant:
+Follow these steps to install Snigdha OS Assistant:
 
 1. **Clone the Repository** 🌀
 
@@ -31,11 +31,11 @@ Follow these steps to install SnigdhaOS Assistant:
    ./install.sh
    ```
 
-That’s it! 🎉 SnigdhaOS Assistant is now ready to use.
+That’s it! 🎉 Snigdha OS Assistant is now ready to use.
 
 ## 🚀 Usage
 
-Launch SnigdhaOS Assistant by running:
+Launch Snigdha OS Assistant by running:
 
 ```bash
 snigdhaos-assistant
@@ -45,7 +45,7 @@ Follow the intuitive on-screen instructions to select and install your preferred
 
 ## 🤝 Contributing
 
-We’re always looking for ways to improve SnigdhaOS Assistant, and we’d love your help! 🌍
+We’re always looking for ways to improve Snigdha OS Assistant, and we’d love your help! 🌍
 
 1. **Fork the Repository** 🍴
 2. **Create a New Branch** 🛤️
