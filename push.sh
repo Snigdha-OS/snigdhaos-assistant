@@ -17,6 +17,13 @@ error_exit() {
 # Ensure the script is run in a Git repository
 git rev-parse --is-inside-work-tree > /dev/null 2>&1 || error_exit "This is not a Git repository."
 
+# Get the current branch name
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Pull the latest changes from the remote repository
+echo "Pulling latest changes from remote branch '$branch'..."
+git pull origin "$branch" || error_exit "Failed to pull changes from the remote repository. Please resolve any conflicts manually."
+
 # Prompt the user to select a commit type
 echo "Select a commit type:"
 select type in "${TYPES[@]}"; do
@@ -80,7 +87,7 @@ else
 fi
 
 # Push the changes to the remote repository
-branch=$(git rev-parse --abbrev-ref HEAD)
+echo "Pushing changes to remote branch '$branch'..."
 if git push origin "$branch"; then
     echo -e "\033[1;32mChanges pushed to remote branch '$branch'.\033[0m"
 else
