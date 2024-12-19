@@ -46,37 +46,43 @@ SnigdhaOSAssistant::~SnigdhaOSAssistant()
 }
 
 void SnigdhaOSAssistant::doInternetUpRequest(){
+    // Create a network manager to handle the request.
     QNetworkAccessManager* network_manager = new QNetworkAccessManager();
+
+    // Send a HEAD request to the specified URL to check internet connectivity.
     auto network_reply = network_manager->head(QNetworkRequest(QString(INTERNET_CHECK_URL)));
 
+    // Create a timer to limit the duration of the network request to 5000 milliseconds (5 seconds).
     QTimer* timer = new QTimer(this);
-    timer->setSingleShot(true);
-    timer->start(5000);
+    timer->setSingleShot(true); // Ensure the timer fires only once.
+    timer->start(5000); // Start the timer with a 5-second timeout.
 
-    // Did we time out? Try again!
+    // Connect the timer's timeout signal to handle request timeouts.
     connect(timer, &QTimer::timeout, this, [this, timer, network_reply, network_manager]() {
-        timer->deleteLater();
-        network_reply->abort();
-        network_reply->deleteLater();
-        network_manager->deleteLater();
-        doInternetUpRequest();
+        timer->deleteLater(); // Clean up the timer.
+        network_reply->abort(); // Abort the network request if it's still ongoing.
+        network_reply->deleteLater(); // Clean up the network reply object.
+        network_manager->deleteLater(); // Clean up the network manager object.
+        doInternetUpRequest(); // Retry the internet connectivity check.
     });
 
-    // Request is done!
+    // Connect the network reply's finished signal to handle the completion of the request.
     connect(network_reply, &QNetworkReply::finished, this, [this, timer, network_reply, network_manager]() {
-        timer->stop();
-        timer->deleteLater();
-        network_reply->deleteLater();
-        network_manager->deleteLater();
-        if (network_reply->error() == network_reply->NoError) {
-            // Wooo!
-            updateState(State::UPDATE);
-        }
-        // Boo!
-        else
-            doInternetUpRequest();
-    });
+        timer->stop(); // Stop the timer as the request has completed.
+        timer->deleteLater(); // Clean up the timer.
+        network_reply->deleteLater(); // Clean up the network reply object.
+        network_manager->deleteLater(); // Clean up the network manager object.
 
+        // Check if the request was successful.
+        if (network_reply->error() == network_reply->NoError) {
+            // If no error occurred, transition the application state to UPDATE.
+            updateState(State::UPDATE);
+        } 
+        else {
+            // If an error occurred, retry the internet connectivity check.
+            doInternetUpRequest();
+        }
+    });
 }
 
 
