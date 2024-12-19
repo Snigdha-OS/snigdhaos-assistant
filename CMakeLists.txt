@@ -1,17 +1,41 @@
+# Specify the minimum CMake version required for the project.
 cmake_minimum_required(VERSION 3.5)
 
+# Define the project name, version, and the programming language used.
 project(snigdhaos-assistant VERSION 0.1 LANGUAGES CXX)
 
+# Include the current directory in the list of include directories.
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+# Enable automatic handling of Qt-specific features (UIC, MOC, RCC).
+# AUTOUIC processes the .ui file (qt/snigdhaosassistant.ui) to generate the corresponding 
+# header file, enabling seamless integration of the GUI layout into the application.
 set(CMAKE_AUTOUIC ON)
+# AUTOMOC processes the Q_OBJECT macro in header files (like qt/snigdhaosassistant.h) 
+# to enable Qt's signal-slot mechanism and other meta-object features.
 set(CMAKE_AUTOMOC ON)
+# AUTORCC (though not explicitly used here) would manage resources if a .qrc file were included 
+# in PROJECT_SOURCES.
 set(CMAKE_AUTORCC ON)
 
+# Specify the version of the C++ standard to use.
+# Here, we are setting it to C++17 to enable modern language features such as std::optional,
+# std::filesystem, structured bindings, and more.
 set(CMAKE_CXX_STANDARD 17)
+
+# Enforce the requirement for the specified C++ standard.
+# If the compiler does not support C++17, the build process will fail with an error.
+# This ensures compatibility and prevents fallback to an older C++ standard.
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# This line explicitly searches for either Qt6 or Qt5 and requires the Widgets and Network components.
+# The NAMES argument tells CMake to look for these specific versions (Qt6 and Qt5).
+# If neither version is found, an error will be raised due to the REQUIRED keyword.
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Network)
+
+# This line dynamically selects the Qt version based on the value of the variable QT_VERSION_MAJOR.
+# If QT_VERSION_MAJOR is 6, it will search for Qt6; if QT_VERSION_MAJOR is 5, it will search for Qt5.
+# It also requires the Widgets and Network components, and will raise an error if they are not found.
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network)
 
 set(PROJECT_SOURCES
