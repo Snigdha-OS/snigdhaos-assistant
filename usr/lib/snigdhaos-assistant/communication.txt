@@ -1,12 +1,12 @@
 false
 element-desktop
-Element Desktop (All-in-one secure chat app for teams, friends and organisations)
+Element Desktop (All-in-one secure chat app for teams, friends, and organisations)
 false
 discord
 Discord (Instant messaging and VoIP social platform)
 false
 discord_arch_electron
-Discord Electron (Popular voice + video app using the system provided electron for increased security and performance)
+Discord Electron (Popular voice + video app using the system-provided Electron for increased security and performance)
 false
 google-chat-linux-bin
 Google Chat (Unofficial electron-based desktop client for Google Chat, electron included)
@@ -18,16 +18,16 @@ jitsi-meet-desktop-bin
 Jitsi Meet (Jitsi Meet desktop application powered by Electron)
 false
 mumble
-Mumble (An Open Source, low-latency, high quality voice chat software)
+Mumble (An Open Source, low-latency, high-quality voice chat software)
 false
 neochat
-Neo Chat (A client for matrix, the decentralized communication protocol)
+Neo Chat (A client for Matrix, the decentralized communication protocol)
 false
 pidgin
-Pidgin
+Pidgin (Instant messaging client supporting multiple protocols)
 false
 qtox
-Qtox
+Qtox (Tox protocol client for secure, decentralized communication)
 false
 skypeforlinux-bin
 Skype (Skype for Linux)
@@ -45,10 +45,40 @@ telegram-desktop
 Telegram (Official desktop version of Telegram messaging app)
 false
 whatsapp-nativefier
-WhatsApp (WhatsApp desktop built with nativefier)
+WhatsApp (WhatsApp desktop built with Nativefier)
 false
 wire-desktop
-Wire Desktop (End-to-end encrypted messenger with file sharing, voice calls and video conferences)
+Wire Desktop (End-to-end encrypted messenger with file sharing, voice calls, and video conferences)
 false
 zoom
 Zoom (Video Conferencing and Web Conferencing Service)
+false
+rocket.chat
+Rocket.Chat (Open-source web chat server and client for team communications)
+false
+mattermost-desktop
+Mattermost (Open-source messaging platform for teams)
+false
+slack
+Slack (Team communication tool for collaboration and file sharing)
+false
+teams-desktop
+Teams (Microsoft Teams client for Linux)
+false
+pidgin-otr
+Pidgin OTR (Off-the-record plugin for Pidgin for secure messaging)
+false
+xmpp-client
+XMPP Client (Client for the XMPP protocol, a decentralized messaging service)
+false
+go-chat
+Go Chat (An open-source, decentralized messaging app built with Go)
+false
+franz
+Franz (All-in-one messaging app that supports multiple messaging services)
+false
+rambox
+Rambox (Messaging and emailing app that combines many different services into one)
+false
+fleep
+Fleep (Collaboration tool focused on team chat with features like file sharing)
