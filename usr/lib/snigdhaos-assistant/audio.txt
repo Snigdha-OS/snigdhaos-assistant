@@ -1,72 +1,72 @@
 false
-amberol
-Amberol (Plays music, and nothing else)
+mixxx
+Mixxx (Free, open-source DJ software for live mixing)
 false
-ardour
-Ardour (A multichannel hard disk recorder and digital audio workstation)
+bitwig-studio
+Bitwig Studio (Music production and performance software)
 false
-audacious
-Audacious (Lightweight, advanced audio player focused on audio quality)
+bluelava
+Bluelava (GNOME-based music player that works with Sonos)
 false
-audacious-plugins
-Audacious Plugins (Plugins for Audacious)
+fmp
+FMP (Fast Music Player, lightweight and simple to use)
 false
-audacity
-Audacity (A program that lets you manipulate digital audio waveforms)
+hydrogen
+Hydrogen (Advanced drum machine for GNU/Linux)
 false
-cava
-Cava (Console-based Audio Visualizer for Alsa)
+jack
+Jack Audio Connection Kit (Professional sound server for connecting audio devices)
 false
-clementine
-Clementine (A modern music player and library organizer)
+jamulus
+Jamulus (Online Jam Session software for musicians)
 false
-curseradio
-Curseradio (Command line radio player)
+kaosilator
+Kaosilator (A virtual music synthesizer and sequencer for improvisation)
 false
-deadbeef
-Deadbeef (Modular GTK audio player for GNU/Linux)
+kdenlive
+Kdenlive (Non-linear video editor that also supports audio editing)
 false
-elisa
-Elisa (Simple music player aiming to provide a nice experience for its users)
+kodi
+Kodi (Media center application with robust music playback capabilities)
 false
-gmusicbrowser
-Gmusicbrowser (Open-source jukebox for large collections of mp3/ogg/flac files, written in perl)
+libreoffice-impress
+LibreOffice Impress (Presentation software, often used for musical slideshows)
 false
-g4music
-G4Music (Play your music)
+muse
+MuseScore (Music notation software for creating sheet music)
 false
-kwave
-KWave (A sound editor for KDE)
+muse-extended
+Muse (Full-featured music composition and production software)
 false
-lollypop
-Lollypop (Music player for GNOME)
+playmidi
+Playmidi (MIDI player and editor for Linux)
 false
-lxmusic
-Lxmusic
+pulseaduio
+PulseAudio (Sound system for POSIX OSes, essential for controlling audio devices)
 false
-lmms
-Lmms (The Linux MultiMedia Studio)
+qjackctl
+QJackCtl (GUI for controlling the Jack Audio Connection Kit)
 false
-ncmpcpp
-Ncmpcpp (An almost exact clone of ncmpc with some new features)
+sickbeard
+SickBeard (Automates downloading TV shows, music, and other media)
 false
-olivia
-Olivia (Elegant Cloud Music Player for Linux Desktop)
+sonata
+Sonata (A simple and easy-to-use music player for GNOME)
 false
-rhythmbox
-Rhythmbox (Music playback and management application)
+terminator
+Terminator (Multi-terminal program for managing terminal windows, useful for music-based coding projects)
 false
-sayonara-player
-Sayonara Player (Small, clear and fast audio player for Linux written in C++, supported by the Qt framework. It uses Gstreamer as audio backend)
+trackma
+Trackma (A music player and manager that integrates with the media collection)
 false
-shortwave
-Shortwave (Find and listen to internet radio stations)
+tunein
+TuneIn (Internet radio streaming software)
 false
-soundconverter
-Sound Converter (A simple sound converter application for GNOME)
+vocaluxe
+Vocaluxe (Karaoke program with support for online lyrics and music)
 false
-spotify
-Spotify (A proprietary music streaming service)
+xiphqt
+XiphQT (Audio player and converter that supports the Ogg format)
 false
-tauon-music-box
-Tauon Music Box (A modern music player)
+zita-ajbridge
+Zita-AJBridge (A JACK audio connection bridge for PulseAudio)
