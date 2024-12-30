@@ -1,66 +1,72 @@
 false
 vim
-VIM (terminal text editor)
+VIM (Terminal text editor)
 false
 visual-studio-code-bin
-Visual Studio Code (proprietary)
+Visual Studio Code (Proprietary code editor)
 false
 vscodium
 VSCodium (Free/Libre Open Source Software Binaries of VS Code)
 false
 sublime-text-4
-Sublime Text 4 (Sophisticated text editor for code, html and prose)
+Sublime Text 4 (Sophisticated text editor for code, HTML, and prose)
 false
 emacs
-GNU Emacs
+GNU Emacs (Highly extensible and customizable text editor)
 false
 qtcreator
-QtCreator
+QtCreator (An IDE for developing with the Qt framework)
 false
 gnome-builder
-Gnome-builder (An IDE for writing GNOME-based software)
+GNOME Builder (An IDE for writing GNOME-based software)
 false
 hugo
-Hugo (A static Website Generator)
+Hugo (A static website generator)
 false
 kdevelop
-Kdevelop (C++ IDE using KDE technologies)
+KDevelop (C++ IDE using KDE technologies)
 false
 netbeans
-Netbeans (IDE for Java, HTML5, PHP, Groovy, C and C++)
+NetBeans (IDE for Java, HTML5, PHP, Groovy, C, and C++)
 false
 postman-bin
-Postman {API platform for building and using APIs}
+Postman (API platform for building and using APIs)
 false
 intellij-idea-community-edition
-IntelliJ-IDEA (Community Edition)
+IntelliJ IDEA (Community Edition)
 false
 pycharm-community-edition
 PyCharm (Community Edition)
 false
 rider
-IntelliJ-Rider
+IntelliJ Rider (IDE for .NET development)
 false
 gitkraken
-Gitkraken
+GitKraken (Graphical Git client)
 false
 github-desktop
-GitHub Desktop
+GitHub Desktop (GitHub's graphical Git client)
 false
 github-desktop-bin
-Github Desktop Bin (GUI for managing Git and GitHub Binary Version)
+GitHub Desktop Bin (GUI for managing Git and GitHub, binary version)
 false
-cockpit cockpit-machines
-Cockpit (Access some system settings at localhost:9090)
+cockpit
+Cockpit (Web-based interface for managing servers at localhost:9090)
 false
 ansible
 Ansible (Simple IT automation engine)
 false
-docker docker-compose
-Docker
+docker
+Docker (Containerization platform for running apps in isolated environments)
 false
-podman-docker podman-compose crun
-Podman (Docker, usable with docker commands)
+docker-compose
+Docker Compose (Tool for defining and running multi-container Docker applications)
+false
+podman-docker
+Podman (Docker-compatible container engine)
+false
+podman-compose
+Podman Compose (Tool to manage multi-container applications with Podman)
 false
 salt
 Salt (Central system and configuration manager)
@@ -72,7 +78,7 @@ puppet
 Puppet (Server automation framework and application)
 false
 prometheus
-Prometheus (systems monitoring and alerting toolkit)
+Prometheus (Systems monitoring and alerting toolkit)
 false
 vagrant
 Vagrant (Build and distribute virtualized development environments)
@@ -82,3 +88,87 @@ Terraform (Building and updating infrastructure as code)
 false
 notepadqq
 Notepadqq (Notepad++-like text editor for Linux)
+false
+element-desktop
+Element Desktop (All-in-one secure chat app for teams, friends, and organisations)
+false
+discord
+Discord (Instant messaging and VoIP social platform)
+false
+discord_arch_electron
+Discord Electron (Popular voice + video app using the system-provided Electron for increased security and performance)
+false
+google-chat-linux-bin
+Google Chat (Unofficial electron-based desktop client for Google Chat, electron included)
+false
+hexchat
+Hex Chat (A GTK+ based IRC client)
+false
+jitsi-meet-desktop-bin
+Jitsi Meet (Jitsi Meet desktop application powered by Electron)
+false
+mumble
+Mumble (An Open Source, low-latency, high-quality voice chat software)
+false
+neochat
+Neo Chat (A client for Matrix, the decentralized communication protocol)
+false
+pidgin
+Pidgin (Instant messaging client supporting multiple protocols)
+false
+qtox
+Qtox (Tox protocol client for secure, decentralized communication)
+false
+skypeforlinux-bin
+Skype (Skype for Linux)
+false
+signal-desktop
+Signal (Private messaging from your desktop)
+false
+slack-desktop
+Slack (Slack Desktop Beta for Linux)
+false
+teams
+MS Teams (Microsoft Teams for Linux is your chat-centered workspace in Office 365)
+false
+telegram-desktop
+Telegram (Official desktop version of Telegram messaging app)
+false
+whatsapp-nativefier
+WhatsApp (WhatsApp desktop built with Nativefier)
+false
+wire-desktop
+Wire Desktop (End-to-end encrypted messenger with file sharing, voice calls, and video conferences)
+false
+zoom
+Zoom (Video Conferencing and Web Conferencing Service)
+false
+rocket.chat
+Rocket.Chat (Open-source web chat server and client for team communications)
+false
+mattermost-desktop
+Mattermost (Open-source messaging platform for teams)
+false
+slack
+Slack (Team communication tool for collaboration and file sharing)
+false
+teams-desktop
+Teams (Microsoft Teams client for Linux)
+false
+pidgin-otr
+Pidgin OTR (Off-the-record plugin for Pidgin for secure messaging)
+false
+xmpp-client
+XMPP Client (Client for the XMPP protocol, a decentralized messaging service)
+false
+go-chat
+Go Chat (An open-source, decentralized messaging app built with Go)
+false
+franz
+Franz (All-in-one messaging app that supports multiple messaging services)
+false
+rambox
+Rambox (Messaging and emailing app that combines many different services into one app)
+false
+fleep
+Fleep (Collaboration tool focused on team chat with features like file sharing)
