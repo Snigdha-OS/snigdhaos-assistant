@@ -1,6 +1,12 @@
 false
-krita krita-plugin-gmic opencolorio
+krita
 Krita (Paint application by KDE)
+false
+krita-plugin-gmic
+Krita Plugin GMIC (Plugin for Krita)
+false
+opencolorio
+OpenColorIO (Color management framework)
 false
 gimp
 GIMP (Advanced image manipulation program)
@@ -27,31 +33,31 @@ mypaint
 MyPaint (Digital painting)
 false
 wings3d
-wings3d (Advanced subdivision modeler that is both powerful and easy to use)
+Wings3D (Advanced subdivision modeler that is both powerful and easy to use)
 false
 sweethome3d
-sweethome3d (Interior design software application for the development of floor plans)
+Sweet Home 3D (Interior design software application for the development of floor plans)
 false
 freecad
-freecad (Parametric 3D CAD modeler based on OpenCascade)
+FreeCAD (Parametric 3D CAD modeler based on OpenCascade)
 false
 librecad
-librecad (A 2D CAD application based on Qt5. Forked from QCAD Community Edition)
+LibreCAD (A 2D CAD application based on Qt5. Forked from QCAD Community Edition)
 false
 kicad
-kicad (Software suite for electronic design automation (EDA))
+KiCad (Software suite for electronic design automation (EDA))
 false
 pencil2d
-Pencil 2D (2D handdrawn animations)
+Pencil 2D (2D hand-drawn animations)
 false
 synfigstudio
 Synfig Studio (2D vector animation)
 false
 opentoonz
-opentoonz (2D animation creation software)
+OpenToonz (2D animation creation software)
 false
 fontforge
 FontForge (Outline and font editor)
 false
 birdfont
-Birdfont (Font editor for creating TTF, EOT and SVG fonts)
+Birdfont (Font editor for creating TTF, EOT, and SVG fonts)
