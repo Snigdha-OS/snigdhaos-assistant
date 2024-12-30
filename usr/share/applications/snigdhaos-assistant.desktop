@@ -1,11 +1,23 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Snigdha OS Assistant
-Comment=Tool for setting up Snigdha OS
-Encoding=UTF-8
+Comment=Tool for setting up and managing Snigdha OS
 Exec=snigdhaos-assistant
 Terminal=false
 Type=Application
 Icon=snigdhaos-assistant
-Categories=System;SnigdhaOS-Setup;
-NoDisplay=false     
+Categories=System;Settings;SnigdhaOS-Setup;Utility;
+NoDisplay=false
+StartupWMClass=SnigdhaOS-Assistant
+MimeType=text/plain;application/x-shellscript;
+Comment=Setup and configure Snigdha OS with ease
+Actions=Setup;Install;
+
+[Desktop Action Setup]
+Name=Run Setup Wizard
+Exec=snigdhaos-assistant setup
+Icon=preferences-system
+
+[Desktop Action Install]
+Name=Install Snigdha OS
+Exec=snigdhaos-assistant install
+Icon=package-install
