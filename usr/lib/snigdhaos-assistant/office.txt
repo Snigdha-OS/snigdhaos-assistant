@@ -24,8 +24,8 @@ calligra
 Calligra Suite by KDE
 false
 obsidian
-Obsidian 
-flase
+Obsidian
+false
 skrooge
 Skrooge (A personal finances manager for KDE)
 false

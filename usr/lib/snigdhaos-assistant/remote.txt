@@ -1,0 +1,42 @@
+false
+remmina
+Remmina (Remote access client)
+false
+xrdp
+xrdp (Remote Desktop Protocol (RDP) server)
+false
+vnc-server
+VNC Server (Virtual Network Computing server)
+false
+tightvnc
+TightVNC (Remote desktop control software)
+false
+tigervnc
+TigerVNC (VNC server and client)
+false
+nomachine
+NoMachine (Remote desktop solution)
+false
+ssh
+OpenSSH (OpenSSH server and client for secure remote login)
+false
+teamviewer
+TeamViewer (Remote control software)
+false
+mremoteng
+mRemoteNG (Multi-protocol remote connection manager)
+false
+guacamole
+Guacamole (Clientless remote desktop gateway)
+false
+sftp
+SFTP (Secure file transfer program)
+false
+meshcentral
+MeshCentral (Remote management of devices)
+false
+anydesk
+AnyDesk (Remote desktop software)
+false
+chromoting
+Chromoting (Remote desktop access using Chrome)

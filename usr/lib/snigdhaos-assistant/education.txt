@@ -1,1 +1,105 @@
- 
+false
+geogebra
+GeoGebra (Mathematics software for learning and teaching)
+false
+gnuplot
+Gnuplot (Plotting and data visualization)
+false
+octave
+GNU Octave (High-level language for numerical computations)
+false
+jupyter-notebook
+Jupyter Notebook (Web-based interactive computing environment)
+false
+scilab
+Scilab (Open-source software for numerical computation)
+false
+latex
+LaTeX (Document preparation system for high-quality typesetting)
+false
+texlive
+TeX Live (TeX distribution for typesetting)
+false
+mathjax
+MathJax (Open-source JavaScript display engine for LaTeX and MathML)
+false
+anki
+Anki (Flashcards for spaced repetition learning)
+false
+edx
+EdX (Open-source platform for online courses)
+false
+moodle
+Moodle (Open-source learning platform)
+false
+tuxmath
+TuxMath (Math game for children)
+false
+tuxpaint
+TuxPaint (Drawing program for young children)
+false
+gcompris
+GCompris (Educational software suite for children)
+false
+scratch
+Scratch (Programming language and environment for kids)
+false
+kdeedu
+KDE Educational Suite (Software tools for education)
+false
+kalzium
+Kalzium (Interactive periodic table for chemistry education)
+false
+kgeography
+KGeography (Geography learning tool)
+false
+klavaro
+Klavaro (Touch typing tutor)
+false
+bc
+bc (Command-line calculator language)
+false
+evince
+Evince (Document viewer for PDF, PostScript, etc.)
+false
+okular
+Okular (Universal document viewer by KDE)
+false
+libreoffice-math
+LibreOffice Math (Equation editor for LibreOffice)
+false
+gimp
+GIMP (Image editor for educational use in art and design)
+false
+inkscape
+Inkscape (Vector graphics editor for design and education)
+false
+stellarium
+Stellarium (Planetarium software for astronomy education)
+false
+celestia
+Celestia (3D space simulation for educational purposes)
+false
+sagemath
+SageMath (Mathematics software for education and research)
+false
+chemtool
+ChemTool (Chemical structure drawing software)
+false
+kstars
+KStars (Astronomy software)
+false
+libreoffice-impress
+LibreOffice Impress (Presentation software for educational slides)
+false
+raspberrypi-imager
+Raspberry Pi Imager (Raspberry Pi OS installation tool)
+false
+scratch2
+Scratch 2 (Programming for children)
+false
+breezebrowser
+BreezeBrowser (Educational tool for classroom presentation)
+false
+gparted
+GParted (Partitioning tool, useful for educational purposes in computing)

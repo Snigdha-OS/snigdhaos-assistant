@@ -48,10 +48,10 @@ insync-thunar
 Insync Thunar Plugin (Thunar integration for insync)
 false
 insync-nemo
-Insync Nemo Plugin (Nemo integration for insync) 
+Insync Nemo Plugin (Nemo integration for insync)
 false
 nextcloud-client
-Next Cloud (Nextloud client for linux)
+Next Cloud (Nextcloud client for linux)
 false
 megasync-bin
 Mega Sync (Official MEGA desktop application for syncing with MEGA Cloud Drive)

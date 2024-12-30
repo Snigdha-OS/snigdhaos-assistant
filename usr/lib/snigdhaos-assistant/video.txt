@@ -18,7 +18,7 @@ vlc
 VLC (Media player)
 false
 smplayer smplayer-skins smplayer-themes
-SMPlayer (Build-in codecs, high compatability video player)
+SMPlayer (Build-in codecs, high compatibility video player)
 false
 baka-mplayer
 Baka-Mplayer (Libmpv and Qt based video player)
