@@ -9,10 +9,10 @@ falkon
 Falkon (Cross-platform QtWebEngine browser)
 false
 firefox
-FireFox (FireFox Web Browser)
+Firefox (Firefox Web Browser)
 false
 firefox-esr
-FireFox ESR (FireFox Extended Support Release)
+Firefox ESR (Firefox Extended Support Release)
 false
 google-chrome
 Google Chrome (The popular web browser by Google)
@@ -21,7 +21,7 @@ icecat
 Icecat (GNU version of the Firefox ESR browser)
 false
 librewolf
-Librewolf (Community-maintained fork of Firefox, focused on privacy, security and freedom)
+Librewolf (Community-maintained fork of Firefox, focused on privacy, security, and freedom)
 false
 opera
 Opera (A fast and secure web browser)
@@ -31,3 +31,30 @@ Qute Browser (A keyboard-driven, vim-like browser based on PyQt)
 false
 vivaldi
 Vivaldi (An advanced browser made with the power user in mind)
+false
+midori
+Midori (A lightweight, fast browser focused on simplicity)
+false
+epiphany
+Epiphany (GNOME Web, a simple browser designed for GNOME)
+false
+lynx
+Lynx (Text-based web browser)
+false
+w3m
+W3m (Text-based web browser with image support for terminal use)
+false
+dillo
+Dillo (A small and fast web browser with a minimalistic design)
+false
+elinks
+Elinks (Advanced text-based web browser)
+false
+surf
+Surf (Simple browser for X11, minimal and fast)
+false
+qutebrowser
+Qutebrowser (A keyboard-driven, vim-like browser based on PyQt)
+false
+conkeror
+Conkeror (Highly customizable browser with a keyboard-focused UI)
