@@ -2,8 +2,12 @@
 
 # Function to log messages to a log file
 log_message() {
-    # This function logs messages with a timestamp to /var/log/snigdhaos_assistant.log
-    sudo echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> /var/log/snigdhaos_assistant.log
+    local log_file="/var/log/snigdhaos_assistant.log"
+    if [ -w "$log_file" ] || sudo touch "$log_file" 2>/dev/null; then
+        echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | sudo tee -a "$log_file" > /dev/null
+    else
+        echo "Log file not writable: $log_file"
+    fi
 }
 
 # Check if the first file (setup script) exists and execute it
