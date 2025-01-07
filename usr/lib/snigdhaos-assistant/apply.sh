@@ -3,7 +3,7 @@
 # Function to log messages to a log file
 log_message() {
     # This function logs messages with a timestamp to /var/log/snigdhaos_assistant.log
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> /var/log/snigdhaos_assistant.log
+    sudo echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> /var/log/snigdhaos_assistant.log
 }
 
 # Check if the first file (setup script) exists and execute it
@@ -38,7 +38,7 @@ else
     # If packages are found, list them and show a package emoji
     echo "📦 The following packages will be installed: $installable_packages"
     log_message "Installing packages: $installable_packages"
-    if ! sudo pacman -S --needed $installable_packages; then
+    if ! sudo pacman -S --needed $installable_packages --noconfirm; then
         # If the package installation fails, show an error with a cross emoji
         echo "❌ Error installing packages. Check logs for more details."
         log_message "Error installing packages: $installable_packages"
